@@ -1,0 +1,142 @@
+<div class="container">
+
+    <div class="boxes">
+        <div class="boxShoppingCart">
+
+        <div>
+            @{{username}}
+            <div>
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+
+            <div>
+
+                <div>
+                    <h1 style="font-size: 2rem; color:rgb(5, 10, 51);">Shopping Cart</h1>
+                    <div>
+                        Small : {{order.small}}
+                    </div>
+                    <div>
+                        Medium : {{order.medium}}
+                    </div>
+                    <div>
+                        Large : {{order.large}}
+                    </div>
+                    <div>
+                        Total : {{order.total}}
+                    </div>
+                </div>
+
+
+                <form action="/order" method="post" name="counterForm">
+
+                    <div class="pizzas">
+
+                        {{#each pizzas}}
+                        <div class="pizza">
+                            <h2>{{flavour}}</h2>
+                            <h2>{{size}}</h2>
+                            <div>
+                                {{price}}
+                            </div>
+                            <button name="pizza_id" value="{{id}}">Order</button>
+                        </div>
+                        {{/each}}
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Popular tours -->
+    <section class="popular-tours">
+        <h1 class="popular-tours-heading">Perfect Pizza</h1>
+        <div class="cards-wrapper">
+            <div class="card">
+                <div class="front-side">
+                    <img src="/images/1.jpg" alt="Forest" class="card-image" />
+                    <h1 class="tour-name">Small pizza</h1>
+                    <ul class="card-list">
+                        <li class="card-list-item">3 toppings </li>
+                        <li class="card-list-item">Meat </li>
+
+                    </ul>
+                    <button class="navigation-button">
+                        price &gt;&gt;
+                    </button>
+                </div>
+                <div class="back-side center">
+                    <button class="navigation-button">
+                        &lt;&lt; back
+                    </button>
+                    <h3 class="tour-price">R {{order.small}}</h3>
+                    <button class="addBtn49c card-button" type="button" name="addBtn49c"></button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="front-side">
+                    <img src="images/2.jpg" alt="River" class="card-image" />
+                    <h1 class="tour-name">Medium pizza</h1>
+                    <ul class="card-list">
+                        <li class="card-list-item">5 toppings </li>
+                        <li class="card-list-item">Vegies and meat</li>
+
+                    </ul>
+                    <button class="navigation-button">
+                        price &gt;&gt;
+                    </button>
+                </div>
+                <div class="back-side center">
+                    <button class="navigation-button">
+                        &lt;&lt; back
+                    </button>
+                    <h3 class="tour-price">R {{order.medium}}</h3>
+
+                    <button class="addBtn79c card-button" type="button" name="addBtn79c"></button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="front-side">
+                    <img src="/images/3.jpg" alt="Sea" class="card-image" />
+                    <h1 class="tour-name">Large pizza</h1>
+                    <ul class="card-list">
+                        <li class="card-list-item">10 toppings</li>
+                        <li class="card-list-item">and a salad</li>
+                    </ul>
+                    <button class="navigation-button">
+                        price &gt;&gt;
+                    </button>
+                </div>
+                <div class="back-side center">
+                    <button class="navigation-button">
+                        &lt;&lt; back
+                    </button>
+                    <h3 class="tour-price">R {{order.large}}</h3>
+
+                    <button class="addBtn99c card-button" type="button" name="addBtn99c"></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <h1 class="popular-tours-heading">Contact details : 079 055 468</h1>
+        </div>
+
+    </section>
+    <!-- End of Popular tours -->
+    <script src="/script.js"></script>
+
+</div>

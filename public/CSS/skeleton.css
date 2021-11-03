@@ -1,0 +1,38 @@
+body {
+	background-color: honeydew;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+	margin: auto;
+	background-color: cornflowerblue;
+	width: 80%;
+	padding: 1em;
+}
+
+
+.counter {
+	background-color: lightgray;
+	font-size: 2em;
+	width: 3em;
+	text-align: center;
+	padding: 0.5em;
+	margin-bottom: 0.25em;
+}
+
+.field {
+	margin: 1em; 
+}
+
+.field label {
+	display: inline-block;
+	width: 5em;
+}
+
+.pizza {
+	flex: 1;
+}
+
+.pizzas {
+	display: flex;
+}
